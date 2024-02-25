@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<script src="calculation.js"></script>
+<style>
+    .main_section{
+        height:300px;
+        width:200px;
+        background-color:gray;
+        text-align: center;
+        position: relative;
+       
+    }
+    #result{
+     background-color:white;
+      width: 80%;
+      margin: 10px;
+      font-size: 24px;
+      box-shadow: 0 2px 5px;
+      border-radius: 5px;
+     
+  }
+  
+     .main_section .buttons {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 9px;
+      
+    
+     }
+     .main_section .buttons button{ 
+       
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+       }
+     
+</style>
+</head>
+<body>
+    <div class="main_section">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+                <button class="clearBtn">C</button>
+                <button class="cancelBtn">cancel</button>
+                <button class="operator">%</button>
+                <button class="operator">/</button>        
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator">*</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator">-</button>
+           
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator">+</button>
+                
+         
+                <button class="operator">0</button>
+                <button class="decimal">.</button>
+                <button class="sendBtn">
+                    =
+                </button>
+           
+        </div>
+       
+    </div>
+                                        
+</body>
+</html>
